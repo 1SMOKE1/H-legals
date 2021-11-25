@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="../styles/fonts/fonts.css")
+    link(rel="stylesheet", href="../styles/team.css")
+    title Document
+  body.introduction 
+    .team-light
+      include ../parts/header2.pug
+    .container
+      .slogan-wrap
+        h1.slogan.gradient__right.hero.bold.
+          Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+      include ../parts/team_team.pug
+    .bg-grey.bg6
+      .container
+        include ../parts/footer2.pug
+    script(src="../js/main.js")
