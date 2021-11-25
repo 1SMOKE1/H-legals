@@ -1,0 +1,18 @@
+@import "common";
+@import "header";
+@import "team_team";
+@import "footer";
+
+.slogan-wrap {
+  max-width: 864px;
+  margin: 0 auto;
+  
+  .slogan {
+    text-align: left;
+    margin: 80px 0;
+    @media (max-width: 926px){
+      @include font(32,38,700);
+      margin: 20px 0;
+    }
+  }
+}

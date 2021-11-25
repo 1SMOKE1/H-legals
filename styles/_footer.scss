@@ -1,0 +1,100 @@
+//.footer
+.footer{
+    //.footer .container .contacts
+   .contacts{
+     padding: 32px 0 40px 0;
+     @media (max-width: 800px){
+       padding-bottom: 0;
+     }
+     //.footer .container .contacts .heading
+     .information{
+       padding-bottom: 22px;
+       display: flex;
+       align-items: center;
+       @media (max-width: 800px){
+         flex-direction: column;
+       }
+       //.footer .container .contacts .heading .adress
+      .adress{
+        @media (max-width: 800px){
+          padding-bottom: 10px;
+        }
+        //.footer .container .contacts .heading .adress:after
+        &:after{
+          content: '\2022';
+          font-size: 25px;
+          margin-left: 30px;
+          font-weight: 700;
+          color: $c7;
+          @media (max-width: 800px){
+            display: none;
+          }
+        }
+      }
+      //.footer .container .contacts .heading .link
+      .link{
+        margin-left: 10px;
+      }
+    }
+    //.footer .container .contacts .content
+    .content{
+      display: flex;
+      align-items: center;
+      @media (max-width: 800px){
+        flex-direction: column;
+      }
+      //.footer .container .contacts .content .icon-facebook
+      .icon-facebook{
+        font-size: 34px;
+        margin-right: 10px;
+        @media (max-width: 800px){
+          padding-bottom: 20px;
+        }
+      }
+      //.footer .container .contacts .content .phone
+      .phone{
+        @media (max-width: 800px){
+          padding-bottom: 20px;
+        }
+        //.footer .container .contacts .content .phone:before
+        &:before{
+          content: "\2022";
+          font-size: 25px;
+          color: $c7;
+          @media (max-width: 800px){
+            display: none;
+          }
+        }
+        //.footer .container .contacts .content .phone:after
+        &:after{
+          content: "\2022";
+          font-size: 25px;
+          color: $c7;
+          margin-left: 10px;
+          @media (max-width: 800px){
+            display: none;
+          }
+        }
+      }
+      //.footer .container .contacts .content .link
+      .link{
+        margin-left: 10px;
+      }
+    }
+   }
+   //.footer .container .copy
+   .copy{
+     padding-top: 30px;
+     @media (max-width: 800px){
+       padding: 20px 0 118px 0;
+     }
+   }
+   //.footer .container .copy
+   .flex__wrap{
+     @media (max-width: 800px){
+       flex-direction: column;
+       align-items: center;
+     }
+   }
+}
+//end

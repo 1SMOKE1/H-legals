@@ -1,0 +1,20 @@
+{
+  "name": "diplom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Index pug": "pug --pretty --watch index.pug",
+    "Services pug": "pug --pretty --watch pages/services.pug",
+    "Services page": "pug --pretty --watch pages/services_page.pug",
+    "About page": "pug --pretty --watch pages/about.pug",
+    "Team": "pug --pretty --watch pages/team.pug",
+    "Team page": "pug --pretty --watch pages/team_page.pug",
+    "Contacts": "pug --pretty --watch pages/contacts.pug",
+    "Publications": "pug --pretty --watch pages/publications.pug",
+    "Publications entry": "pug --pretty --watch pages/publications-entry.pug"
+  },
+  "author": "",
+  "license": "ISC"
+}

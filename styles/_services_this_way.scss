@@ -1,0 +1,35 @@
+.services_this_way {
+  padding-bottom: 80px;
+  @media (max-width: 600px){
+    padding-bottom: 0;
+  }
+  .content {
+    display: flex;
+    @media (max-width: 600px){
+      flex-direction: column;
+    }
+    .list {
+      max-width: 650px;
+      &:nth-child(2){
+        margin-left: 60px;
+        @media (max-width: 600px){
+          margin-left: 0;
+        }
+      }
+      .item {
+        margin-bottom: 20px;
+        .text{
+          display: flex;
+          &:before{
+            align-self: flex-start;
+            content: '\2022';
+            color: $c4;
+            font-size: 30px;
+            margin-top: -3px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}

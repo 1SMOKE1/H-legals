@@ -1,0 +1,47 @@
+header.header
+  .container
+    .grid 
+      a.logo(href="index.html")
+        include ../assets/svg/logo.svg
+      .page-id
+        span.icon-Slash_l.c4
+        span.slash.c1
+        span.icon-Slash_r.c4
+      .contacts
+        .lang
+          button.btn.bold.fs-btn.uppercase.transition.active.c1 Ук
+          button.btn.bold.fs-btn.uppercase.transition.c1 Ру
+          button.btn.bold.fs-btn.uppercase.transition.c1 En
+        p.adress.paragraph-min.c1 Одеса, Адміральський пр., 3
+        p.phone.paragraph-min.bold.c1 +38 (050) 390 15 91
+        a(href="#").icon-facebook.c1
+      nav.nav 
+        ul.menu 
+          li.item
+            a.link.paragraph.transition.c1(href="pages/about.html") про нас
+          li.item
+            a.link.paragraph.transition.c1(href="pages/services.html") послуги 
+          li.item
+            a.link.paragraph.transition.c1(href="pages/team.html") команда
+          li.item
+            a.link.paragraph.transition.c1(href="pages/publications.html") публікації
+          li.item
+            a.link.paragraph.transition.c1(href="pages/contacts.html") контакти
+        .burger-menu
+          p.icon-sanwich#sanwich(onclick="openSanwich()")
+nav.nav-mobile#navmobile
+  button.btn_close-mobile#btnclose(onclick="closeSanwich()")
+    include ../assets/svg/btn-close.svg
+  ul.menu-mobile 
+    li.item.bg6
+      a.link.h3.transition.c3.medium(href="pages/about.html") про нас
+    li.item.bg6
+      a.link.h3.transition.c3.medium(href="pages/services.html") послуги 
+    li.item.bg6
+      a.link.h3.transition.c3.medium(href="pages/team.html") команда
+    li.item.bg6
+      a.link.h3.transition.c3.medium(href="pages/publications.html") публікації
+    li.item.bg6
+      a.link.h3.transition.c3.medium(href="pages/contacts.html") контакти
+  
+

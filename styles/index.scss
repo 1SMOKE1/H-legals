@@ -1,0 +1,39 @@
+@import "common";
+@import "header";
+@import "main-p";
+@import "experience";
+@import "services";
+@import "team";
+@import "cases";
+@import "clients";
+@import "publications";
+@import "footer";
+
+.container {
+  //.services .container .heading
+  .heading {
+    padding-top: 80px;
+    @media (max-width: 900px) {
+      padding-top: 0;
+    }
+    //.services .container .heading .title
+    .title {
+      display: flex;
+      align-items: center;
+      opacity: 0.5;
+      //.services .container .heading .title .image
+      .image {
+        margin-left: 3px;
+      }
+    }
+    
+    
+  }
+  //.services .container .slogan
+  .slogan {
+    @media(max-width: 910px){
+    @include font(32, 38, 700);
+    }
+  }
+  
+}

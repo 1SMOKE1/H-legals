@@ -1,0 +1,15 @@
+@import "common";
+@import "header";
+@import "information";
+@import "footer";
+
+.map-wrap {
+  margin-top: 80px;
+  @media (max-width: 831px) {
+    margin-top: 40px;
+  }
+  .big-map {
+    width: 100%;
+    height: 600px;
+  }
+}

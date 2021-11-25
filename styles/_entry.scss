@@ -1,0 +1,37 @@
+.entry {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 930px){
+    margin-top: 20px;
+  }
+  .content {
+    width: 900px;
+    @media (max-width: 930px){
+      width: 335px;
+    }
+    //
+    .title {
+      margin-bottom: 10px;
+      @media (max-width: 930px){
+        @include font(22, 26, 500 );
+      }
+    }
+    .date {
+      margin-bottom: 40px;
+      @media (max-width: 930px){
+        margin-bottom: 0;
+      }
+    }
+    .line {
+      margin: 40px 0;
+      @media (max-width: 930px){
+        margin: 20px 0;
+      }
+    }
+    .text {
+      margin-bottom: 40px;
+    }
+  }
+}

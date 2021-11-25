@@ -1,0 +1,112 @@
+.team_bio {
+  margin: 80px 0;
+  display: flex;
+  @media (max-width: 943px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (max-width: 570px) {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  //
+  .image {
+    width: 413px;
+    height: 500px;
+    border-radius: 12px;
+    margin-right: 40px;
+    @media (max-width: 943px) {
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+    }
+    @media (max-width: 570px) {
+    width: 335px;
+    height: 405px;
+    }
+  }
+  //
+  .content {
+    width: 55%;
+    margin-top: 20px;
+    @media (max-width: 865px){
+      width: 80%;
+    }
+    @media (max-width: 570px) {
+      width: 100%;
+      }
+    //
+    .name {
+      margin-bottom: 10px;
+    }
+    //
+    .information {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      @media (max-width: 865px){
+        flex-direction: column;
+        align-items: start  ;
+      }
+      //
+      .position {
+        margin-right: 10px;
+        @media (max-width: 865px){
+          margin-bottom: 10px;
+        }
+      }
+      //
+      .link1 {
+        @media (max-width: 865px){
+          margin-bottom: 10px;
+        }
+        //
+        &:before {
+          margin-right: 10px;
+          content: "\2022";
+          font-size: 25px;
+          font-weight: 700;
+          color: $c22;
+          @media (max-width: 865px){
+            display: none;
+          }
+        }
+        
+        //
+        &:after {
+          margin-left: 10px;
+          content: "\2022";
+          font-size: 25px;
+          font-weight: 700;
+          color: $c22;
+          @media (max-width: 865px){
+            display: none;
+          }
+        }
+      }
+      .link2 {
+        margin-left: 10px;
+        @media (max-width: 865px){
+          margin-left: 0;
+        }
+      }
+    }
+    //
+    .text {
+      margin-top: 40px;
+      max-width: 641px;
+      @media (max-width: 865px){
+        margin-top: 20px;
+      }
+      .text-2 {
+        margin-top: 20px;
+      }
+      .title {
+        margin-top: 40px;
+      }
+      .text-3 {
+        margin-top: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "common";
+@import "header";
+@import "services";
+@import "cases";
+@import "clients";
+@import "footer";
+
+.padding{
+  height: 73px;
+  @media(max-width: 910px){
+    height: 20px;
+  }
+}
+
+.slogan {
+  @media(max-width: 910px){
+  @include font(32, 38, 700);
+  }
+}

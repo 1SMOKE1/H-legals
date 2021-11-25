@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet", href="../styles/fonts/fonts.css")
+    link(rel="stylesheet", href="../styles/services.css")
+  body.introduction
+    .gradient-wrap
+      .dark
+        include ../parts/header2.pug
+      .container
+        .padding
+        h1.slogan.hero.bold.gradient__right Що ми вміємо робити краще за інших?
+        include ../parts/services2.pug
+    .shadow.bg5
+    .shadow.shadow2.bg2
+    .container 
+      include ../parts/cases.pug
+    include ../parts/clients2.pug
+    .bg-grey.bg6
+      .container
+        include ../parts/footer2.pug
+    script(src="../js/main.js")

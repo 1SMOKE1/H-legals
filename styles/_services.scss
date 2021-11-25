@@ -1,0 +1,166 @@
+//.services
+.services {
+  //.services .container .assets
+  .assets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    min-height: 684px;
+    padding-top: 68px;
+    padding-bottom: 22px;
+    @media (max-width: 600px) {
+      padding-top: 20px;
+    }
+    //.services .container .assets .item
+    .item {
+      width: calc(93% / 3);
+      @media (max-width: 1000px) {
+        width: 50%;
+      }
+      @media (max-width: 850px) {
+        width: 100%;
+        padding-top: 40px;
+        //.services .container .assets @media{max-width: 850px) .item:first-child
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+      //.services .container .assets .item .item__mobile
+      .item__mobile {
+        margin-bottom: 15px;
+        @media (max-width: 600px) {
+          margin-bottom: 0;
+          align-items: center;
+          display: flex;
+          //.services .container .assets .item .item__mobile @media(max-width: 600px) .title
+          .title {
+            width: calc(100% - 64px);
+            padding-bottom: 15px;
+            @media (max-width: 600px) {
+              @include font(18, 21);
+            }
+          }
+        }
+        //.services .contaeiner .assets .item .item__mobile .icon-wrap
+        .icon-wrap {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 92px;
+          height: 92px;
+          border-radius: 24px;
+          margin-bottom: 20px;
+          font-size: 50px;
+          @media (max-width: 600px) {
+            width: 64px;
+            height: 64px;
+            font-size: 30px;
+            margin-right: 10px;
+          }
+        }
+      }
+      //.setvices .container .assets .item .text
+      .text {
+        margin-bottom: 58px;
+        @media (max-width: 850px) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+//end
+
+.active2{
+  opacity: 1;
+}
+
+
+// не трогать
+// .services {
+//   padding-top: 80px;
+//   @media (max-width: 900px) {
+//     padding-top: 0;
+//   }
+//   .container {
+//     .heading {
+//       .title {
+//         display: flex;
+//         align-items: center;
+//         opacity: 0.5;
+//       }
+//       .image{
+//         margin-left: 3px;
+//       }
+//     }
+//     .slogan {
+//       @include font(32, 38, 700);
+//     }
+
+//     .assets {
+//       display: flex;
+//       flex-wrap: wrap;
+//       justify-content: space-between;
+//       align-content: space-between;
+//       min-height: 684px;
+//       padding-top: 68px;
+//       padding-bottom: 22px;
+//       @media (max-width: 600px) {
+//         padding-top: 20px;
+//       }
+//       .item {
+//         width: calc(93% / 3);
+//         @media (max-width: 1000px) {
+//           width: 50%;
+//         }
+//         @media (max-width: 850px) {
+//           width: 100%;
+//           padding-top: 40px;
+//           &:first-child {
+//             padding-top: 0;
+//           }
+//         }
+
+//         &__mobile {
+//           margin-bottom: 15px;
+//           @media (max-width: 600px) {
+//             margin-bottom: 0;
+//             align-items: center;
+//             display: flex;
+//             .title {
+//               width: calc(100% - 64px);
+//               padding-bottom: 15px;
+//               @media (max-width: 600px) {
+//                 @include font(18, 21);
+//               }
+//             }
+//           }
+//           .icon-wrap {
+//             display: inline-flex;
+//             justify-content: center;
+//             align-items: center;
+//             width: 92px;
+//             height: 92px;
+//             border-radius: 24px;
+//             margin-bottom: 20px;
+//             font-size: 50px;
+//             @media (max-width: 600px) {
+//               width: 64px;
+//               height: 64px;
+//               font-size: 30px;
+//               margin-right: 10px;
+//             }
+//           }
+//         }
+
+//         .text {
+//           margin-bottom: 58px;
+//           @media (max-width: 850px) {
+//             margin-bottom: 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

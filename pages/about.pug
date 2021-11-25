@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet", href="../styles/fonts/fonts.css")
+    link(rel="stylesheet", href="../styles/about.css")
+  body.introduction
+    .about-light
+      include ../parts/header2
+    .container
+      include ../parts/advantages.pug
+    include ../parts/about_team.pug
+    .container 
+      include ../parts/more_text.pug
+    .bg-grey.bg6
+      .container 
+        include ../parts/achievments.pug
+        .group.group-1#menu
+          .btn_1.bg3.active(onclick="showAchive1(1)")
+          .btn_1.bg3(onclick="showAchive2(2)")
+          .btn_1.bg3(onclick="showAchive3(3)")
+        .group.group-2#menu2 
+          .btn_1.bg3.active(onclick="showAchiveSmall1(1)")
+          .btn_1.bg3(onclick="showAchiveSmall2(2)")
+          .btn_1.bg3(onclick="showAchiveSmall3(3)")
+          .btn_1.bg3(onclick="showAchiveSmall4(4)")
+          .btn_1.bg3(onclick="showAchiveSmall5(5)")
+          .btn_1.bg3(onclick="showAchiveSmall6(6)")
+        hr.bg22  
+        include ../parts/footer2.pug
+    script(src="../js/about.js")

@@ -1,0 +1,101 @@
+//.cases
+.cases {
+  margin-top: 41px;
+  //.cases .container .grid
+  .grid {
+    display: grid;
+    grid-template-columns: 0.305fr 0.1fr 0.325fr 0.1fr 0.42fr;
+    grid-template-rows: 0.1fr 1fr 0.198fr;
+    grid-template-areas:
+      "blok1 blok1 blok3 blok3 blok4"
+      "blok2 blok2 blok3 blok3 blok4"
+      "blok5 blok6 blok6 blok7 blok7";
+    grid-gap: 2px;
+    @media (max-width: 1100px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.2fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "blok1 blok1"
+        "blok2 blok3"
+        "blok4 blok5"
+        "blok6 blok7";
+    }
+    @media (max-width: 620px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0, 2fr repeat(6, 1fr);
+      grid-template-areas:
+        "blok1"
+        "blok2"
+        "blok3"
+        "blok4"
+        "blok5"
+        "blok6"
+        "blok7";
+    }
+    //.cases .container .grid .item
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 20px;
+      @media (max-width: 1100px) {
+        justify-content: space-between;
+        align-items: center;
+      }
+      @media (max-width: 620px) {
+        align-items: flex-start;
+      }
+      //.cases .container .grid .item .subtitle
+    }
+    //
+    .item_1 {
+      grid-area: blok1;
+      border-radius: 12px 0 0 0;
+      @media (max-width: 1100px) {
+        border-radius: 12px 12px 0 0;
+      }
+    }
+    .item_2 {
+      grid-area: blok2;
+    }
+    .item_3 {
+      grid-area: blok3;
+    }
+    .item_4 {
+      grid-area: blok4;
+      border-radius: 0 12px 0 0;
+      align-content: flex-end;
+      @media (max-width: 1100px) {
+        border-radius: 0;
+      }
+    }
+    .item_5 {
+      grid-area: blok5;
+      border-radius: 0 0 0 12px;
+      @media (max-width: 1100px) {
+        border-radius: 0;
+      }
+    }
+    .item_6 {
+      grid-area: blok6;
+      @media (max-width: 1100px) {
+        border-radius: 0 0 0 12px;
+      }
+      @media (max-width: 620px) {
+        border-radius: 0;
+      }
+    }
+    .item_7 {
+      grid-area: blok7;
+      border-radius: 0 0 12px 0;
+      @media (max-width: 620px) {
+        border-radius: 0 0 12px 12px;
+      }
+      .subtitle {
+        padding-top: 20px;
+      }
+    }
+  }
+}
+//end

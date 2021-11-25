@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="../styles/fonts/fonts.css")
+    link(rel="stylesheet", href="../styles/publications-entry.css")
+    title Document
+  body.introduction 
+    .publications-light 
+      include ../parts/header2
+    .container
+    .img-wrap
+      img.image(src="../assets/images/entry/entry-image.png" alt="")
+    .container
+      include ../parts/entry
+      .slogan1.hero.gradient__right.bold.
+        До уваги українських силовиків: перевірка проводилася онлайн,
+        без обшуків, без вилучення серверів чи іншого
+        видимого для бізнесу втручання. І так можна було.
+      include ../parts/entry-part
+    .bg-grey.bg6
+      .container.pos-rel
+        .info 
+          a.link.h3-caps.c3.bold(href="../pages/publications.html") Публікації
+            img.image(src="../assets/svg/link_arrow_blue.svg")
+          h1.slogan.hero.bold.gradient__right Рекомендуємо
+        include ../parts/publications2
+        hr.line.bg13
+      .container 
+        include ../parts/footer2
+    script(src="../js/main.js")
+        

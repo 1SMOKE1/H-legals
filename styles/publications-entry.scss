@@ -1,0 +1,37 @@
+@import "common";
+@import "header";
+@import "entry";
+@import "entry-part";
+@import "publications";
+@import "footer";
+
+.slogan1{
+  max-width: 920px;
+  margin: 0 auto;
+  @media (max-width: 930px){
+    @include font(32, 38, 700);
+    max-width: 335px;
+  }
+}
+
+.pos-rel{
+  position: relative;
+}
+
+.img-wrap{
+  display: flex;
+  justify-content: center;
+  @media (max-width: 930px){
+    justify-content: start;
+  }
+  .image {
+    margin: 0 auto;
+    margin-top: 40px;
+    @media (max-width: 930px){
+      width: 370px;
+      margin-top: 20px;
+    }
+  }
+}
+
+

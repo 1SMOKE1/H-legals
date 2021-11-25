@@ -1,0 +1,184 @@
+.publications_publ {
+  .switcher-wrap {
+    display: flex;
+    justify-content: center;
+    .switcher {
+      width: 260px;
+      padding: 2px;
+      border-radius: 12px;
+      margin-top: 40px;
+      @media (max-width: 800px){
+        margin-top: 20px;
+      }
+      .btn-switcher {
+        width: 125px;
+        height: 36px;
+        background-color: transparent;
+        border: none;
+        border-radius: 10px;
+        color: $c20;
+        cursor: pointer;
+        &:nth-child(1) {
+          background-color: $c1;
+        }
+      }
+    }
+  }
+  .grid {
+    margin-top: 40px;
+    padding-bottom: 104px;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(3, calc(96.6% / 3));
+    grid-template-rows: 265px 145px 25px 244px 160px 30px 40px 320px 80px 15px 350px  ;
+    grid-template-areas: 
+    "blok1 blok2 blok3"
+    "blok4 blok2 blok3"
+    "blok4 blok5 blok3"
+    "blok4 blok5 blok6"
+    "blok7 blok5 blok6"
+    "blok7 blok8 blok6"
+    "blok7 blok8 blok9"
+    "blok10 blok8 blok9"
+    "blok10 blok11 blok9"
+    "blok10 blok11 blok12"
+    ". blok11 blok12"
+    ". . blok12";
+    @media (max-width: 1351px){
+      grid-template-columns: repeat(2, calc(98% / 2));
+      grid-template-rows: 0.1fr repeat(2, 0.8fr) 0.1fr repeat(3, 0.8fr);
+      grid-template-areas: 
+    "blok1 blok1"
+    "blok2 blok3"
+    "blok6 blok5"
+    "blok7 blok7"
+    "blok8 blok10"
+    "blok9 blok11"
+    "blok4 blok12"
+    }
+    grid-gap: 20px;
+    @media (max-width: 800px){
+      grid-template-columns: 99%;
+      grid-template-rows: 0.1fr 0.1fr repeat(3, 0.8fr);
+      grid-template-areas: 
+    "blok1"
+    "blok2"
+    "blok4"
+    "blok5"
+    "blok6"
+    "blok3";
+    padding-bottom: 144px;
+    margin-top: 20px;
+    }
+    grid-gap: 20px;
+    //
+    .item {
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      &:hover{
+        box-shadow: 2px 2px 10px 1px rgba(206, 66, 66, 0.2);
+      }
+      .content {
+        padding: 20px;
+        //publications .container .grid .item .content .title
+        .title {
+          padding-bottom: 10px;
+        }
+        //.publications .container .grid .item .content .date
+        .date {
+          padding-bottom: 20px;
+          @media (max-width: 800px){
+            padding-bottom: 0;
+          }
+        }
+        //.publications .container .grid .item .content .line
+        .line {
+          @media (max-width: 1350px) {
+            display: none;
+          }
+        }
+        //.publications .container .grid .item .content .text
+        .text {
+          padding-top: 20px;
+          @media (max-width: 1350px) {
+            display: none;
+          }
+        }
+      }
+      //.publications .container .grid .item .image
+      .image {
+        width: 100%;
+      }
+      &_1{
+        grid-area: blok1;
+      }
+      &_2{
+        grid-area: blok2;
+      }
+      &_3{
+        grid-area: blok3;
+      }
+      &_4{
+        grid-area: blok4;
+      }
+      &_5{
+        grid-area: blok5;
+      }
+      &_6{
+        grid-area: blok6;
+      }
+      &_7{
+        grid-area: blok7;
+        @media (max-width: 800px){
+          display: none;
+        }
+      }
+      &_8{
+        grid-area: blok8;
+        @media (max-width: 800px){
+          display: none;
+        }
+      }
+      &_9{
+        grid-area: blok9;
+        @media (max-width: 800px){
+          display: none;
+        }
+      }
+      &_10{
+        grid-area: blok10;
+        @media (max-width: 800px){
+          display: none;
+        }
+      }
+      &_11{
+        grid-area: blok11;
+        @media (max-width: 800px){
+          display: none;
+        }
+      }
+      &_12{
+        grid-area: blok12;
+        @media (max-width: 800px){
+          display: none;
+        }
+      }
+    }
+  }
+  .btn__publications {
+    width: 250px;
+    height: 50px;
+    border-radius: 12px;
+    position: absolute;
+    border: none;
+    left: 50%;
+    bottom: 10px;
+    z-index: 4;
+    cursor: pointer;
+    transform: translate(-50%, -40px);
+    &:hover{
+      box-shadow: 2px 2px 2px 1px rgba(31, 30, 30, 0.2);
+      transition: all 0.3s ease;
+    }
+  }
+}

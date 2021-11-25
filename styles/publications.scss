@@ -1,0 +1,16 @@
+@import "common";
+@import "header";
+@import "publications_publ";
+@import "footer";
+
+.pos-rel{
+  position: relative;
+}
+
+.bg-grey-publ{
+  margin-top: 60px;
+  min-height: 100%;
+  @media (max-width: 800px){
+    margin-top: 20px;
+  }
+}

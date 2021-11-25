@@ -1,0 +1,129 @@
+//.publications
+.pos-rel{
+  position: relative;
+}
+
+.publications {  
+  //.publications .container .grid
+  .grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, calc(93% / 3));
+    grid-template-rows: 265px 115px 5px 230px ;
+    grid-template-areas:
+      "blok1 blok2 blok3"
+      "blok4 blok2 blok3"
+      "blok4 blok5 blok3"
+      "blok4 blok5 blok6";
+    grid-gap: 40px;
+    @media (max-width: 1350px) {
+      grid-template-columns: repeat(2, calc(96% / 2));
+      grid-template-rows: 0.1fr repeat(2, 0.2fr);
+      grid-template-areas:
+        "blok1 blok1"
+        "blok2 blok3"
+        "blok4 blok5";
+    }
+    @media (max-width: 900px) {
+      margin-top: 20px;
+      grid-template-columns: 99%;
+      grid-template-rows: 100px 1fr 1fr;
+      grid-template-areas:
+        "blok1"
+        "blok2"
+        "blok4";
+      padding-bottom: 130px;
+    }
+    //.publications .container .grid .item
+    .item {
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      &:hover{
+        box-shadow: 2px 2px 10px 1px rgba(206, 66, 66, 0.2);
+      }
+      //.publications .container .grid .item .content
+      .content {
+        padding: 20px;
+        //publications .container .grid .item .content .title
+        .title {
+          padding-bottom: 10px;
+        }
+        //.publications .container .grid .item .content .date
+        .date {
+          padding-bottom: 20px;
+        }
+        //.publications .container .grid .item .content .line
+        .line {
+          @media (max-width: 1350px) {
+            display: none;
+          }
+        }
+        //.publications .container .grid .item .content .text
+        .text {
+          padding-top: 20px;
+          @media (max-width: 1350px) {
+            display: none;
+          }
+        }
+      }
+      //.publications .container .grid .item .image
+      .image {
+        width: 100%;
+      }
+      &_1 {
+        grid-area: blok1;
+      }
+      &_2 {
+        grid-area: blok2;
+      }
+      &_3 {
+        grid-area: blok3;
+        @media (max-width: 900px) {
+          display: none;
+        }
+      }
+      &_4 {
+        position: relative;
+        grid-area: blok4;
+      }
+      &_5 {
+        position: relative;
+        grid-area: blok5;
+        @media (max-width: 900px) {
+          display: none;
+        }
+      }
+      &_6 {
+        position: relative;
+        grid-area: blok6;
+        @media (max-width: 1350px) {
+          display: none;
+        }
+      }
+      //.publications .container .grid .item .shadow__publications
+      .shadow__publications {
+        @media (max-width: 900px) {
+          display: none;
+        }
+      }
+    }
+  }
+  //.publications .container .btn__publications
+  .btn__publications {
+    width: 250px;
+    height: 50px;
+    border-radius: 12px;
+    position: absolute;
+    border: none;
+    left: 50%;
+    bottom: 10px;
+    z-index: 4;
+    cursor: pointer;
+    transform: translate(-50%, -40px);
+    &:hover{
+      box-shadow: 2px 2px 2px 1px rgba(31, 30, 30, 0.2);
+      transition: all 0.3s ease;
+    }
+  }
+}
+//end

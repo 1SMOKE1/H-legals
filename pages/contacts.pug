@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="../styles/fonts/fonts.css")
+    link(rel="stylesheet", href="../styles/contacts.css")
+    title Document
+  body.introduction
+    .contacts-light
+      include ../parts/header2
+    .container
+      include ../parts/information-contacts
+    .map-wrap.bg-grey.bg6
+      iframe.big-map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10998.427711816132!2d30.74149266367163!3d46.436670037607335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63396894457b7%3A0x7f6c5236cbcb70c8!2z0JDQtNC80LjRgNCw0LvRjNGB0LrQuNC5INC_0YDQvtGB0L8uLCAzLCDQntC00LXRgdGB0LAsINCe0LTQtdGB0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1sru!2sua!4v1637316772065!5m2!1sru!2sua"  style="border:0;" allowfullscreen="" loading="lazy")
+      .container
+        include ../parts/footer2
+  script(src="../js/main.js")

@@ -1,0 +1,1015 @@
+//light
+.light {
+  .container {
+    //light container grid
+    .grid {
+      .logo {
+        .fill-white {
+          fill: $c1;
+        }
+        .fill-acent {
+          fill: $c4;
+        }
+      }
+      //page-id
+      .page-id {
+        display: none;
+        .icon-Slash_l,
+        .icon-Slash_r {
+          color: $c4;
+        }
+        .slash {
+          &:after {
+            content: "послуги";
+          }
+        }
+      }
+      //contact
+      .contacts {
+        //contacts lang
+        .lang {
+          //contacts lang btn
+          .btn {
+            color: $c1;
+            @media (max-width: 550px) {
+              color: $c7;
+            }
+            //contacts lang btn:hover
+            &:hover {
+              background-color: $c4;
+              color: $c1;
+            }
+          }
+          //contacts lang avtive
+          .active {
+            background-color: $c4;
+            @media (max-width: 550px) {
+              color: $c1;
+            }
+          }
+        }
+        //contacts phone
+        .phone {
+          @media (max-width: 550px) {
+            color: $c2;
+          }
+        }
+      }
+      //nav
+      .nav {
+        //nav menu
+        .menu {
+          //nav menu link
+          .link {
+            //nav menu link:hover
+            &:hover {
+              color: $c2;
+            }
+          }
+        }
+      }
+      //end
+    }
+  }
+}
+
+//light
+.light-2 {
+  .container {
+    //light container grid
+    .grid {
+      .logo {
+        .fill-white {
+          fill: $c1;
+        }
+        .fill-acent {
+          fill: $c4;
+        }
+      }
+      //page-id
+      .page-id {
+        .icon-Slash_l,
+        .icon-Slash_r {
+          color: $c4;
+        }
+        .slash {
+          &:after {
+            content: "послуги";
+          }
+        }
+      }
+      //contact
+      .contacts {
+        //contacts lang
+        .lang {
+          //contacts lang btn
+          .btn {
+            color: $c1;
+            @media (max-width: 550px) {
+              color: $c7;
+            }
+            //contacts lang btn:hover
+            &:hover {
+              background-color: $c4;
+              color: $c1;
+            }
+          }
+          //contacts lang avtive
+          .active {
+            background-color: $c4;
+            @media (max-width: 550px) {
+              color: $c1;
+            }
+          }
+        }
+        //contacts phone
+        .phone {
+          @media (max-width: 550px) {
+            color: $c2;
+          }
+        }
+      }
+      //nav
+      .nav {
+        //nav menu
+        .menu {
+          //nav menu link
+          .link {
+            //nav menu link:hover
+            &:hover {
+              color: $c2;
+            }
+          }
+        }
+      }
+      //end
+    }
+  }
+}
+
+.dark {
+  .container {
+    .grid {
+      .logo {
+        .fill-white {
+          fill: $c1;
+        }
+        .fill-acent {
+          fill: $c4;
+        }
+      }
+      //page-id
+      .page-id {
+        //page-id icons
+        .icon-Slash_l,
+        .icon-Slash_r {
+          color: $c4;
+        }
+        .slash {
+          &:after {
+            content: "послуги";
+          }
+        }
+      }
+      //contacts
+      .contacts {
+        //contacts lang
+        .lang {
+          //contacts lang btn
+          .btn {
+            color: $c1;
+            //contacts lang btn:hover
+            &:hover {
+              background-color: $c4;
+            }
+          }
+          //contacts lang avtive
+          .active {
+            background-color: $c4;
+          }
+        }
+        //contacts phone
+        .phone {
+          @media (max-width: 550px) {
+            color: $c1;
+          }
+        }
+      }
+      // nav
+      .nav {
+        //nav menu
+        .menu {
+          //nav menu link
+          .link {
+            //nav menu link:hover
+            &:hover {
+              color: $c2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.team-light {
+  .container {
+    //light container grid
+    .grid {
+      .logo {
+        .fill-white {
+          fill: $c20;
+        }
+        .fill-acent {
+          fill: $c4;
+        }
+      }
+      //page-id
+      .page-id {
+        .icon-Slash_l,
+        .icon-Slash_r {
+          color: $c4;
+        }
+        .slash {
+          &:after {
+            color: $c20;
+            content: "команда";
+          }
+        }
+      }
+      //contact
+      .contacts {
+        //contacts lang
+        .lang {
+          //contacts lang btn
+          .btn {
+            color: $c7;
+            @media (max-width: 550px) {
+              color: $c7;
+            }
+            //contacts lang btn:hover
+            &:hover {
+              background-color: $c4;
+              color: $c1;
+            }
+          }
+          //contacts lang avtive
+          .active {
+            color: $c1;
+            background-color: $c4;
+          }
+        }
+        .adress {
+          color: $c7;
+          &:before {
+            color: $c7;
+            opacity: 0.5;
+            content: "\2022";
+            font-size: 20px;
+            padding: 0 5px 3px 0;
+            font-weight: 700;
+          }
+          //.header .container .grid .contacts .adress:after
+          &:after {
+            color: $c7;
+            opacity: 0.5;
+            content: "\2022";
+            font-size: 20px;
+            padding: 0 0 3px 5px;
+            font-weight: 700;
+          }
+        }
+        //contacts phone
+        .phone {
+          color: $c7;
+          &:after {
+            opacity: 0.5;
+            font-weight: 700;
+          }
+        }
+        .icon-facebook {
+          color: $c7;
+        }
+      }
+      //nav
+      .nav {
+        //nav menu
+        .menu {
+          //nav menu link
+          .link {
+            color: $c3;
+            font-weight: 500;
+            //nav menu link:hover
+            &:hover {
+              color: $c4;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      //end
+    }
+    .burger-menu {
+      .icon-sanwich {
+        color: $c20;
+      }
+    }
+  }
+}
+
+.about-light {
+  .container {
+    //light container grid
+    .grid {
+      .logo {
+        .fill-white {
+          fill: $c20;
+        }
+        .fill-acent {
+          fill: $c4;
+        }
+      }
+      //page-id
+      .page-id {
+        .icon-Slash_l,
+        .icon-Slash_r {
+          color: $c4;
+        }
+        .slash {
+          &:after {
+            color: $c20;
+            content: " про нас";
+          }
+        }
+      }
+      //contact
+      .contacts {
+        //contacts lang
+        .lang {
+          //contacts lang btn
+          .btn {
+            color: $c7;
+            @media (max-width: 550px) {
+              color: $c7;
+            }
+            //contacts lang btn:hover
+            &:hover {
+              background-color: $c4;
+              color: $c1;
+            }
+          }
+          //contacts lang avtive
+          .active {
+            color: $c1;
+            background-color: $c4;
+          }
+        }
+        .adress {
+          color: $c7;
+          &:before {
+            color: $c7;
+            opacity: 0.5;
+            content: "\2022";
+            font-size: 20px;
+            padding: 0 5px 3px 0;
+            font-weight: 700;
+          }
+          //.header .container .grid .contacts .adress:after
+          &:after {
+            color: $c7;
+            opacity: 0.5;
+            content: "\2022";
+            font-size: 20px;
+            padding: 0 0 3px 5px;
+            font-weight: 700;
+          }
+        }
+        //contacts phone
+        .phone {
+          color: $c7;
+          &:after {
+            opacity: 0.5;
+            font-weight: 700;
+          }
+        }
+        .icon-facebook {
+          color: $c7;
+        }
+      }
+      //nav
+      .nav {
+        //nav menu
+        .menu {
+          //nav menu link
+          .link {
+            color: $c3;
+            font-weight: 500;
+            //nav menu link:hover
+            &:hover {
+              color: $c4;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      //end
+    }
+    .burger-menu {
+      .icon-sanwich {
+        color: $c20;
+      }
+    }
+  }
+}
+
+.contacts-light {
+  .container {
+    //light container grid
+    .grid {
+      .logo {
+        .fill-white {
+          fill: $c20;
+        }
+        .fill-acent {
+          fill: $c4;
+        }
+      }
+      //page-id
+      .page-id {
+        .icon-Slash_l,
+        .icon-Slash_r {
+          color: $c4;
+        }
+        .slash {
+          &:after {
+            color: $c20;
+            content: "контакты";
+          }
+        }
+      }
+      //contact
+      .contacts {
+        //contacts lang
+        .lang {
+          //contacts lang btn
+          .btn {
+            color: $c7;
+            @media (max-width: 550px) {
+              color: $c7;
+            }
+            //contacts lang btn:hover
+            &:hover {
+              background-color: $c4;
+              color: $c1;
+            }
+          }
+          //contacts lang avtive
+          .active {
+            color: $c1;
+            background-color: $c4;
+          }
+        }
+        .adress {
+          color: $c7;
+          &:before {
+            color: $c7;
+            opacity: 0.5;
+            content: "\2022";
+            font-size: 20px;
+            padding: 0 5px 3px 0;
+            font-weight: 700;
+          }
+          //.header .container .grid .contacts .adress:after
+          &:after {
+            color: $c7;
+            opacity: 0.5;
+            content: "\2022";
+            font-size: 20px;
+            padding: 0 0 3px 5px;
+            font-weight: 700;
+          }
+        }
+        //contacts phone
+        .phone {
+          color: $c7;
+          &:after {
+            opacity: 0.5;
+            font-weight: 700;
+          }
+        }
+        .icon-facebook {
+          color: $c7;
+        }
+      }
+      //nav
+      .nav {
+        //nav menu
+        .menu {
+          //nav menu link
+          .link {
+            color: $c3;
+            font-weight: 500;
+            //nav menu link:hover
+            &:hover {
+              color: $c4;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      //end
+    }
+    .burger-menu {
+      .icon-sanwich {
+        color: $c20;
+      }
+    }
+  }
+}
+
+.publications-light {
+  //light container grid
+  .container {
+    .grid {
+      .logo {
+        .fill-white {
+          fill: $c20;
+        }
+        .fill-acent {
+          fill: $c4;
+        }
+      }
+      //page-id
+      .page-id {
+        .icon-Slash_l,
+        .icon-Slash_r {
+          color: $c4;
+        }
+        .slash {
+          &:after {
+            color: $c20;
+            content: "публікації";
+          }
+        }
+      }
+      //contact
+      .contacts {
+        //contacts lang
+        .lang {
+          //contacts lang btn
+          .btn {
+            color: $c7;
+            @media (max-width: 550px) {
+              color: $c7;
+            }
+            //contacts lang btn:hover
+            &:hover {
+              background-color: $c4;
+              color: $c1;
+            }
+          }
+          //contacts lang avtive
+          .active {
+            color: $c1;
+            background-color: $c4;
+          }
+        }
+        .adress {
+          color: $c7;
+          &:before {
+            color: $c7;
+            opacity: 0.5;
+            content: "\2022";
+            font-size: 20px;
+            padding: 0 5px 3px 0;
+            font-weight: 700;
+          }
+          //.header .container .grid .contacts .adress:after
+          &:after {
+            color: $c7;
+            opacity: 0.5;
+            content: "\2022";
+            font-size: 20px;
+            padding: 0 0 3px 5px;
+            font-weight: 700;
+          }
+        }
+        //contacts phone
+        .phone {
+          color: $c7;
+          &:after {
+            opacity: 0.5;
+            font-weight: 700;
+          }
+        }
+        .icon-facebook {
+          color: $c7;
+        }
+      }
+      //nav
+      .nav {
+        //nav menu
+        .menu {
+          //nav menu link
+          .link {
+            color: $c3;
+            font-weight: 500;
+            //nav menu link:hover
+            &:hover {
+              color: $c4;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      //end
+    }
+    .burger-menu {
+      .icon-sanwich {
+        color: $c20;
+      }
+    }
+  }
+}
+
+//.header
+.header {
+  
+  padding-top: 60px;
+  @media (max-width: 925px) {
+    padding-top: 20px;
+  }
+  //.header .container
+  .container {
+    
+    //.header .container .grid
+    .grid {
+      display: grid;
+      grid-template-rows: auto auto;
+      grid-template-columns: auto auto 1fr;
+      grid-template-areas:
+        "logo p-id cont"
+        "logo p-id navigation";
+
+      @media (max-width: 925px) {
+        grid-template-columns: 0.05fr 1fr 0.05fr;
+        grid-template-areas:
+          "cont cont cont"
+          "logo p-id navigation ";
+      }
+      //.header .container .grid .logo
+      .logo {
+        grid-area: logo;
+        //.header .container .grid .logo .logo-img
+        .logo-img {
+          cursor: pointer;
+          width: 155px;
+          height: 62px;
+          @media (max-width: 925px) {
+            margin-top: 20px;
+            width: 77.5px;
+            height: 31px;
+          }
+        }
+      }
+      //.header .container .grid .page-id
+      .page-id {
+        grid-area: p-id;
+        @media (max-width: 925px) {
+          margin-top: 20px;
+        }
+        //.header .container .grid .page-id .slash
+        .slash {
+          font-family: "TT Norms";
+          @include font(38, 45);
+          vertical-align: top;
+          @media (max-width: 925px) {
+            @include font(19, 22);
+            vertical-align: top;
+          }
+        }
+        //.header .container .grid .page-id icons
+        .icon-Slash_l,
+        .icon-Slash_r {
+          font-size: 47px;
+          @media (max-width: 925px) {
+            font-size: 20px;
+          }
+        }
+      }
+      //.header .container .grid .contacts
+      .contacts {
+        grid-area: cont;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @media (max-width: 925px) {
+          justify-content: space-between;
+        }
+        //.header .container .grid .contacts .lang
+        .lang {
+          display: flex;
+        }
+        //.header .container .grid .contacts .adress
+        .adress {
+          display: flex;
+          align-items: center;
+          @media (max-width: 925px) {
+            display: none;
+          }
+          //.header .container .grid .contacts .adress:before
+          &:before {
+            content: "\2022";
+            font-size: 20px;
+            padding: 0 5px 3px 0;
+            font-weight: 700;
+          }
+          //.header .container .grid .contacts .adress:after
+          &:after {
+            content: "\2022";
+            font-size: 20px;
+            padding: 0 0 3px 5px;
+            font-weight: 700;
+          }
+        }
+        //.header .container .grid .contacts .phone
+        .phone {
+          display: flex;
+          align-items: center;
+          padding-left: 3px;
+          @media (max-width: 550px) {
+            letter-spacing: 1.3px;
+          }
+          //.header .container .grid .contacts .phone:after
+          &:after {
+            content: "\2022";
+            font-size: 20px;
+            padding: 0 0 3px 10px;
+            @media (max-width: 925px) {
+              display: none;
+            }
+          }
+        }
+        //.header .container .grid .contacts .icon-facebook
+        .icon-facebook {
+          padding-left: 10px;
+          font-size: 20px;
+          &:hover {
+            color: $c3;
+            transition: all 0.3s ease;
+          }
+          @media (max-width: 925px) {
+            display: none;
+          }
+        }
+      }
+      //.header .container .grid .nav
+      .nav {
+        padding-top: 16px;
+        grid-area: navigation;
+        //.header .container .grid .nav .menu
+        .menu {
+          display: flex;
+          justify-content: flex-end;
+          @media (max-width: 925px) {
+            display: none;
+          }
+          //.header .container .grid .nav .menu .item
+          .item {
+            margin-right: 15px;
+            //.header .container .grid .nav .menu .item .link
+            .link {
+              //.header .container .grid .nav .menu .item .link
+              &:hover {
+                color: $c4;
+              }
+            }
+          }
+          .item:last-child {
+            margin-right: 0;
+          }
+        }
+        //.header .container .grid .nav .burger-menu
+        .burger-menu {
+          position: relative;
+          margin-top: 5px;
+          color: $c1;
+          display: none;
+          @media (max-width: 925px) {
+            cursor: pointer;
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-mobile{
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  transform: translateY(60%);
+  transition: transform 2s ease;
+  z-index: 1000;
+  padding: 20px;
+  border-radius: 12px 12px 0 0;
+  .btn_close-mobile{
+    min-width: 18px;
+    min-height: 18px;
+    background-color: transparent;
+    border: none;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  .menu-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .item{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;  
+      border-radius: 12px;
+      min-width: 355px;
+      padding: 5px 15px;
+      
+      &:last-child{
+        margin-bottom: 20px;
+      }
+      .link{
+        text-align: center;
+        width: 100%;
+        color: $c3;
+        &:hover{
+          color: $c4;
+        }
+      }
+    }
+  }
+}
+
+.nav_mobile_fixed{
+  position: fixed;
+  background-color: #fff;
+  
+}
+
+
+
+.show{
+  display: flex;
+}
+
+// не трогать
+// .header {
+//   padding-top: 60px;
+//   @media (max-width: 910px) {
+//     padding-top: 20px;
+//   }
+//   .container {
+//     .grid {
+//       display: grid;
+//       grid-template-rows: auto auto;
+//       grid-template-columns: auto auto 2fr;
+//       grid-template-areas:
+//         "logo p-id cont"
+//         "logo p-id navigation";
+
+//       @media (max-width: 910px) {
+//         grid-template-areas:
+//           "cont cont cont"
+//           "logo p-id navigation ";
+//       }
+//       .logo {
+//         grid-area: logo;
+//         .logo-img {
+//           @media (max-width: 910px) {
+//             margin-top: 20px;
+//             width: 77.5px;
+//             height: 31px;
+//           }
+//         }
+//       }
+
+//       .page-id {
+//         grid-area: p-id;
+//         @media (max-width: 910px) {
+//           margin-top: 20px;
+//         }
+//         .slash {
+//           font-family: "TT Norms";
+//           @include font(38, 45);
+//           vertical-align: top;
+//           @media (max-width: 910px) {
+//             @include font(19, 22);
+//             vertical-align: top;
+//           }
+//         }
+//         .icon-Slash_l,
+//         .icon-Slash_r {
+//           font-size: 47px;
+//           @media (max-width: 910px) {
+//             font-size: 20px;
+//           }
+//         }
+//       }
+
+//       .contacts {
+//         grid-area: cont;
+//         display: flex;
+//         align-items: center;
+//         justify-content: flex-end;
+//         @media (max-width: 910px) {
+//           justify-content: space-between;
+//         }
+//         .lang {
+//           display: flex;
+//           .active {
+//             @media (max-width: 550px) {
+//             }
+//           }
+//         }
+//         .adress {
+//           display: flex;
+//           align-items: center;
+//           @media (max-width: 910px) {
+//             display: none;
+//           }
+//           &:before {
+//             content: "\2022";
+//             font-size: 20px;
+//             padding: 0 5px 3px 0;
+//             font-weight: 700;
+//           }
+//           &:after {
+//             content: "\2022";
+//             font-size: 20px;
+//             padding: 0 0 3px 5px;
+//             font-weight: 700;
+//           }
+//         }
+//         .phone {
+//           display: flex;
+//           align-items: center;
+//           padding-left: 3px;
+//           &:after {
+//             content: "\2022";
+//             font-size: 20px;
+//             padding: 0 0 3px 10px;
+//           }
+//           @media (max-width: 910px) {
+//             &:after {
+//               display: none;
+//             }
+//           }
+//           @media (max-width: 550px) {
+//             letter-spacing: 1.3px;
+//           }
+//         }
+//         .icon-facebook {
+//           padding-left: 10px;
+//           font-size: 20px;
+//           @media (max-width: 910px) {
+//             display: none;
+//           }
+//         }
+//       }
+//       .nav {
+//         padding-top: 16px;
+//         grid-area: navigation;
+//         .menu {
+//           display: flex;
+//           justify-content: flex-end;
+//           @media (max-width: 710px) {
+//             display: none;
+//           }
+//           .item {
+//             margin-right: 15px;
+//             &:last-child {
+//               margin-right: 0;
+//             }
+//             .link {
+//               &:hover {
+//                 text-decoration: underline;
+//               }
+//             }
+//           }
+//         }
+//         .burger-menu {
+//           display: none;
+//           @media (max-width: 710px) {
+//             cursor: pointer;
+//             display: flex;
+//             justify-content: flex-end;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

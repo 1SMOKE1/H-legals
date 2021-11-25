@@ -1,0 +1,60 @@
+.achievments {
+  //
+  .title {
+    text-align: center;
+    padding: 30px 0;
+  }
+  .carousel-wrap {
+    width: 100%;
+    height: 110px;
+    @media (max-width: 900px) {
+      min-height: 57px;
+    }
+    .carousel {
+      overflow: hidden;
+      .content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        //
+        .item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-width: 300px;
+          height: 110px;
+          margin-right: 40px;
+          border-radius: 12px;
+          &:nth-child(4),
+          &:nth-child(8),
+          &:nth-child(12) {
+            margin-right: 0;
+          }
+          @media (max-width: 900px) {
+            min-width: 157px;
+            min-height: 57px;
+            margin-right: 20px;
+          }
+          @media (max-width: 600px) {
+            &:nth-child(4),
+            &:nth-child(8) {
+              margin-right: 20px;
+            }
+            &:nth-child(12){
+              margin-right: 0;
+            }
+          }
+          //
+
+          .image {
+            @media (max-width: 900px) {
+              width: 83px;
+              height: 31px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
